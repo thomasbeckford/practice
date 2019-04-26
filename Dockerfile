@@ -1,7 +1,7 @@
 FROM node:7
-RUN mkdir /docker
-ADD . /docker
-WORKDIR /docker
+RUN mkdir /practice
+ADD . /practice
+WORKDIR /practice
 RUN npm i
 EXPOSE 80
 CMD ["npm", "start"]
