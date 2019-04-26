@@ -2,9 +2,6 @@ const express = require('express');
 const server = express();
 const PORT = 3000;
 const pg = require('pg');
-const models = require('./models');
-// const Op = models.Sequelize.Op;
-// var Sequelize = require('sequelize');
 
 connectionString = 'postgres://postgres:password@db:5432/practicedocker';
 
@@ -22,4 +19,3 @@ server.get('/', function (req, res, next) {
 });
 
 
-models.Product.findAll().then(pr => console.log(pr))
