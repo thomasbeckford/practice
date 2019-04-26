@@ -3,8 +3,8 @@ const server = express();
 const PORT = 3000;
 const pg = require('pg');
 const models = require('./models');
-const Op = models.Sequelize.Op;
-var Sequelize = require('sequelize');
+// const Op = models.Sequelize.Op;
+// var Sequelize = require('sequelize');
 
 connectionString = 'postgres://postgres:password@db:5432/practicedocker';
 
